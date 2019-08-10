@@ -1,0 +1,21 @@
+﻿<%--Author Name: Pranit Chimurkar
+Created on: 2019/08/02
+Task Name: Learn using Master and Content pages--%>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Day9_10.MasterPage" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div style="text-align: center;margin-top:250px">
+            <asp:Label ID="MasterLabel" runat="server"></asp:Label><br />
+            <asp:ContentPlaceHolder ID="NestedContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

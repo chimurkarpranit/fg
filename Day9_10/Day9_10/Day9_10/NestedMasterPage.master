@@ -1,0 +1,13 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="NestedMasterPage.master.cs" Inherits="Day9_10.NestedMasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="NestedMasterContent" ContentPlaceHolderID="NestedContentPlaceHolder" runat="server">
+    <div style="text-align: center;">
+        <asp:Panel ID="Panel1" runat="server" CssClass="Panel">
+            <asp:Label ID="NestedLabel" runat="server"></asp:Label><br />
+            <asp:ContentPlaceHolder ID="NestedContent" runat="server" />
+        </asp:Panel>
+    </div>
+</asp:Content>
+
